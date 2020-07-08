@@ -1,6 +1,7 @@
 import React from 'react';
 import pic from '../assets/pica.png.svg'
 import Result from './result'
+import { Link } from 'react-router-dom';
 
 class Checker extends React.Component {
 
@@ -66,7 +67,10 @@ class Checker extends React.Component {
                     <h1 className="font-bold text-xl mt-2 text-blue-500">Quarantine mood</h1>
                     <form onSubmit={this.handleRona}>
                         <div className="w-full">
-                            <p className="mt-8 text-gray-700 text-left">Be useful for once today</p>
+                            <Link to="/help">
+                                <li className="mt-8 ml-4 cursor-pointer text-left text-lg text-green-500">Help</li>
+                            </Link>
+                            <p className="text-gray-700 text-left">Be useful for once today</p>
                             <p className="text-gray-700 font-bold text-xs text-left">First letter must be capital</p>
                             <input name="country" placeholder="Your Country" className="w-full mt-2 rounded border-blue-300 mb-2 border p-2" />
                         </div>
@@ -79,7 +83,7 @@ class Checker extends React.Component {
                 <Result
                     country={this.state.country}
                     deaths={this.state.deaths}
-                    confirmed={this.state.confirmed} 
+                    confirmed={this.state.confirmed}
                     recovered={this.state.recovered}
                 />
             </div>
