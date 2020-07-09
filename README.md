@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://raw.githubusercontent.com/Inffinite/rona-react/2e124d2f7d425c2d1045432bc69de3fd0df91e4a/src/assets/pica.png.svg)
 
 ## Available Scripts
 
@@ -16,6 +16,10 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build:style`
+
+Sets up tailwind css
 
 ### `npm run build`
 
